@@ -20,6 +20,8 @@ import { HeroComponent } from './layouts/hero/hero.component';
 
 import { LottieModule } from 'ngx-lottie';
 import player from 'lottie-web';
+import { SponsorComponent } from './layouts/sponsor/sponsor.component';
+import { InformationComponent } from './layouts/information/information.component';
 
 
 export function playerFactory() {
@@ -42,7 +44,9 @@ export function playerFactory() {
     CommentFormComponent,
     CommentListComponent,
     AboutUsComponent,
-    HeroComponent
+    HeroComponent,
+    SponsorComponent,
+    InformationComponent
   ],
   imports: [
     BrowserModule,
