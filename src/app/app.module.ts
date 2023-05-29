@@ -22,6 +22,7 @@ import { LottieModule } from 'ngx-lottie';
 import player from 'lottie-web';
 import { SponsorComponent } from './layouts/sponsor/sponsor.component';
 import { InformationComponent } from './layouts/information/information.component';
+import { PostCardComponent } from './layouts/post-card/post-card.component';
 
 
 export function playerFactory() {
@@ -46,7 +47,8 @@ export function playerFactory() {
     AboutUsComponent,
     HeroComponent,
     SponsorComponent,
-    InformationComponent
+    InformationComponent,
+    PostCardComponent
   ],
   imports: [
     BrowserModule,
