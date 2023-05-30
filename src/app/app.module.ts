@@ -20,9 +20,19 @@ import { HeroComponent } from './layouts/hero/hero.component';
 
 import { LottieModule } from 'ngx-lottie';
 import player from 'lottie-web';
+
+// import * as lottie from 'lottie-web';
+
+
 import { SponsorComponent } from './layouts/sponsor/sponsor.component';
 import { InformationComponent } from './layouts/information/information.component';
 import { PostCardComponent } from './layouts/post-card/post-card.component';
+
+
+import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import { faStar as farStar } from '@fortawesome/free-regular-svg-icons';
+import { faStar as fasStar } from '@fortawesome/free-solid-svg-icons';
+import { library } from '@fortawesome/fontawesome-svg-core';
 
 
 export function playerFactory() {
@@ -62,4 +72,13 @@ export function playerFactory() {
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+  constructor(librairy: FaIconLibrary) {
+
+    library.add(fasStar, farStar);
+
+  }
+
+
+ }
